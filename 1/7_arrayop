@@ -1,0 +1,57 @@
+// map,filter,find,some,every,includes,indexof,findindex
+
+const array = [
+    {
+        name:"palak",
+        age:28,
+        status:'rich'
+    },
+    {
+        name:"palak1",
+        age:28,
+        status:'rich'
+    },
+    {
+        name:"param",
+        age:24,
+        status:'very rich'
+
+    },
+    {
+        name:"himanshu",
+        age:31,
+        status:'affullent'
+
+    }
+]
+result = array.map((single,index )=>{
+    return `Name is ${single.name} and age is ${single.age}`
+})
+
+//console.log(result[0])
+
+
+result_find = array.find((single,index)=>{
+return single.status === 'rich'})
+console.log(result_find)
+
+console.log(array.filter((single,index)=>{
+    return single.status === 'rich'
+}))
+console.log(array.some((single,index)=>{
+    return single.age>32
+}))
+
+console.log(array.every((single,index)=>{
+    return single.age <30
+}))
+
+const fruits = ['aple','banana','orage']
+
+console.log(fruits.findIndex((single,index)=>{
+    return single == 'orange'
+}))
+
+//console.log(array.findIndex((single,index)=>{
+  // return single.age ===24
+//}))
