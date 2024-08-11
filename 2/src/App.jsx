@@ -6,6 +6,7 @@ import Classbased from './components/Classbased'
 import Functionalbased from './components/Functionalbased'
 import Arrowfunction from './components/Arrowfunction'
 import Productlist from './components/Product-list/Productlist'
+import Userread from './components/Userread'
 const Dummydata = ['person1','Person2','Person3']
 
 
@@ -18,12 +19,12 @@ function App() {
   return (
     <>
 
-      <h1>Hello from React to world</h1>
-      <Classbased/>
+      {/* <h1>Hello from React to world</h1>
+       <Classbased/>
       <Functionalbased/>
       <Arrowfunction/>
-      <Productlist name='Himanshu' city='chd' d = {Dummydata} />
-      
+      <Productlist name='Himanshu' city='chd' d = {Dummydata} />  */}
+      <Userread/>
       
       
       
